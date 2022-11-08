@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from lustcdn.ru/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Nov 2022 16:38:05 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8" />
+    <title>Maintenance page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="../cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <style>
+      :root {
+        --black: #000;
+        --white: #fff;
+        --gray-900: #0f0f0f;
+        --gray-800: #1f2024;
+        --gray-700: #2f3036;
+        --gray-600: #757575;
+        --gray-500: #9e9e9e;
+        --gray-400: #bdbdbd;
+        --gray-300: #e0e0e0;
+        --gray-200: #eee;
+        --gray-100: #f5f5f5;
+        --blue: #3870c4;
+        --red: #c80000;
+        --green: #00aab4;
+        --orange: #ffc300;
+        --teal: #03a9f4;
+        --rootBg: var(--gray-100);
+        --rootColor: var(--gray-700);
+        --componentBg: var(--white);
+        --componentColor: var(--gray-700);
+      }
+
+      html {
+        box-sizing: border-box;
+        font-size: 62.5%;
+      }
+
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+
+      * {
+        transition: all 0.1s ease-out 0s;
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+
+      body {
+        font-size: 1.8rem;
+        background: #f5f5f5;
+        color: #2f3036;
+        background: var(--rootBg);
+        color: var(--rootColor);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+
+      a {
+        color: var(--blue);
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .c-card {
+        max-width: 600px;
+        width: 100%;
+        background: #fff;
+        background: var(--componentBg);
+        margin-bottom: 3rem;
+        border-radius: 5px;
+      }
+
+      .c-card__body {
+        padding: 2rem 2rem 4rem;
+      }
+
+      .c-card__img {
+        max-height: 250px;
+        padding-top: 2rem;
+      }
+
+      .u-text--center {
+        text-align: center;
+      }
+
+      .u-text--left {
+        text-align: left;
+      }
+
+      .u-text--right {
+        text-align: right;
+      }
+
+      .u-subtitle {
+        font-weight: 400;
+      }
+
+      .u-desc {
+        font-size: 13px;
+        opacity: 0.75;
+      }
+
+      .c-logo {
+        display: inline-flex;
+        align-items: center;
+        margin-bottom: 3rem;
+      }
+
+      .c-logo__icon {
+        width: 50px;
+        height: 50px;
+        margin-right: 1rem;
+      }
+
+      .c-logo__subtitle {
+        font-weight: 600;
+        letter-spacing: 0.12em;
+        margin-top: 0.5rem;
+        font-size: 0.7em;
+        text-transform: uppercase;
+        opacity: 0.7;
+      }
+
+      .c-toggle {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        font-size: 1.4rem;
+        cursor: pointer;
+        border: 0;
+        background: transparent;
+        border-radius: 5px;
+        display: inline-flex;
+        align-items: center;
+        background: #2d599c;
+        color: #adc5e8;
+        padding: 0.5rem 1.5rem;
+      }
+
+      .c-toggle.active {
+        background: #ffe180;
+        color: #997500;
+      }
+
+      .c-toggle__icon {
+        margin-right: 0.5rem;
+        width: 1.6rem;
+      }
+
+      .c-toggle:focus,
+      .c-toggle:active {
+        outline: 0;
+      }
+
+      .c-toggle:hover,
+      .c-toggle:focus {
+        transform: translateY(-0.1rem);
+        box-shadow: 0px 0px 0px 3px currentColor;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button class="c-toggle">
+      <svg
+        class="c-toggle__icon"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg
+      ><span class="c-toggle__wordmark">Night</span>
+    </button>
+    <div class="c-logo">
+      <svg
+        class="c-logo__icon"
+        viewBox="0 0 180 179"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M26.4 0H153.6C167.9 0 179.5 11.6 179.5 25.9V153.1C179.5 167.4 167.9 179 153.6 179H26.4C12 179 0.399994 167.4 0.399994 153.1V25.9C0.399994 11.6 12 0 26.4 0Z"
+          fill="var(--componentBg)"
+        ></path>
+        <path
+          d="M91.4 107.4L54 85.7V63.9L72.7 31.4L35.1 53.2V96.6L72.7 118.1V139.9L91.4 150.7L110.2 139.9V118.2L91.4 128.9V107.4Z"
+          fill="#c80000"
+        ></path>
+        <path
+          d="M100.6 102.2C102.5 103.5 104.8 104.2 107.1 104.2H107.4C114.3 104.2 119.8 98.6 119.8 91.8V91.1L101 101.9L100.6 102.2Z"
+          fill="#c80000"
+        ></path>
+        <path
+          d="M110.3 53.1V31.4L148 53.2V96.3L129.1 107.2V63.9L110.3 53.1Z"
+          fill="#c80000"
+        ></path>
+      </svg>
+      <div class="c-logo__wordmark">
+        <div class="c-logo__title">Lust CDN</div>
+        <div class="c-logo__subtitle">Maintenance Mode</div>
+      </div>
+    </div>
+    <div class="c-card">
+      <img
+        class="c-card__img"
+        src="https://chargebacks911.com/assets/maintenance-hero.svg"
+      />
+      <div class="c-card__body u-text--center">
+        <h1 class="c-title">We'll be right back!</h1>
+        <h4 class="u-subtitle">
+          This service is temporarily down for a bit of maintenance.
+        </h4>
+        <p class="u-desc">
+          If you want to report abuse file or get access contact us at
+          <a href="cdn-cgi/l/email-protection.html#f99a8ab9958c8a8d9a9d97d78b8c"><span class="__cf_email__" data-cfemail="f09383b09c85838493949ede8285">[email&#160;protected]</span></a>
+        </p>
+      </div>
+    </div>
+    <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+      console.clear();
+      const root = document.documentElement;
+      const toggle = document.querySelector(".c-toggle");
+      toggle.addEventListener("click", function () {
+        if (toggle.classList.contains("active")) {
+          toggle.classList.remove("active");
+          toggle.querySelector(".c-toggle__icon").innerHTML =
+            '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>';
+          toggle.querySelector(".c-toggle__wordmark").innerHTML = "Night";
+          root.style.setProperty("--rootBg", `var(--gray-100)`);
+          root.style.setProperty("--rootColor", `var(--gray-700)`);
+          root.style.setProperty("--componentBg", `var(--white)`);
+          root.style.setProperty("--componentColor", `var(--gray-700)`);
+        } else {
+          toggle.classList.add("active");
+          toggle.querySelector(".c-toggle__icon").innerHTML =
+            '<circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>';
+          toggle.querySelector(".c-toggle__wordmark").innerHTML = "Day";
+          root.style.setProperty("--rootBg", `var(--gray-800)`);
+          root.style.setProperty("--rootColor", `var(--gray-200)`);
+          root.style.setProperty("--componentBg", `var(--gray-900)`);
+          root.style.setProperty("--componentColor", `var(--gray-100)`);
+        }
+      });
+    </script>
+  </body>
+
+<!-- Mirrored from lustcdn.ru/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Nov 2022 16:38:06 GMT -->
+</html>
