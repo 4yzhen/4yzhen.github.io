@@ -221,30 +221,34 @@ body.open .sidebar {
 }
 
 .c-toggle {
-  position: absolute;
-  top: 0rem;
-  margin-top: 54rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
   right: 4.5rem;
   font-size: 1.0rem;
   cursor: pointer;
-  border: 0;
   background: transparent;
-  border-radius: 5px;
   display: inline-flex;
   align-items: center;
   background: #f7f7f7;
   color: #181818;
-  padding: 0.3rem 0.5rem;
 }
 
 .c-toggle.active {
   background: #252525;
   color: #f9f9f9;
+  text-align: center;
+  align-items: center;
 }
 
 .c-toggle__icon {
   margin-right: 0.5rem;
   width: 1.0rem;
+  text-align: center;
+  align-items: center;
 }
 
 .c-toggle:focus,
