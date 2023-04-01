@@ -1,0 +1,347 @@
+@import url("https://api.fontshare.com/v2/css?f[]=clash-grotesk@200,700,400,600,300,500&display=swap");
+
+:root {
+  --bold: #242438;
+  --medium: #2f2f44;
+  --regular: #545870;
+  --light: #d8d9e3;
+}
+
+body {
+  background-color: var(--bold);
+  color: var(--light);
+  font-family: 'Clash Grotesk', sans-serif;
+}
+
+.banner {
+  position: absolute;
+  background: url(../img/banner.gif);
+  background-size: cover;
+  filter: blur(5px);
+  z-index: -1;
+  height: 300px;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  max-width: 1850px;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+
+.avatar {
+  position: absolute;
+  width: 200px;
+  top: 51px;
+  right: 55%;
+  z-index: -1;
+  box-shadow: 1px 1px 30px 10px #000;
+  border-radius: 100%;
+}
+
+.avatar-text {
+  position: absolute;
+  font-weight: 500;
+  line-height: 40px;
+  text-decoration: none;
+  text-shadow: 1px 1px 30px #000;
+  right: 37.72%;
+  font-style: italic;
+  top: 105px;
+  z-index: -1;
+  font-size: 30px;
+}
+
+.alink {
+  color: var(--regular);
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.alink:hover {
+  color: rgb(187, 161, 207);
+}
+
+.socialmedia-name {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 22px;
+}
+
+.socialmedia-desc {
+  position: absolute;
+  right: 15px;
+  font-size: 12px;
+}
+
+.svg {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+#svgcolor {
+  fill: var(--light);
+}
+
+.social-media {
+  display: block;
+  padding: 20px;
+}
+
+.aboutme {
+  position: relative;
+  background-color: var(--medium);
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.aboutme-name {
+    position: absolute;
+    left: 37px;
+    top: 37px;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.aboutme-desc {
+    position: absolute;
+    left: 15px;
+    padding: 10px;
+    top: 120px;
+    font-size: 20px;
+}
+
+button {
+    position: relative;
+    background-color: var(--medium);
+    margin: 18px;
+    top: 10px;
+    left: 50px;
+    border: 0px;
+    width: 330px;
+    height: 70px;
+    border-radius: 10px;
+    color: var(--light);
+  }
+  
+  button:hover {
+    width: 330px;
+    height: 70px;
+    border-radius: 10px;
+    background-color: var(--light);
+    color: var(--medium);
+  }
+  
+  button:hover #svgcolor {
+    fill: var(--medium) !important;
+  }
+
+  .aboutme {
+    top: 330px;
+    left: 450px;
+    height: 270px;
+    width: 74%;
+  }
+  .aboutme-name {
+    font-size: 24px;
+    left: 20px;
+    top: 20px;
+  }
+  .aboutme-desc {
+    font-size: 16px;
+    left: 20px;
+    top: 70px;
+  }
+
+@media (max-width: 1200px) {
+    .container {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 1180px) {
+    button {
+        position: relative;
+        background-color: var(--medium);
+        margin: 10px;
+        top: 320px;
+        left: 50px;
+        border: 0px;
+        width: 650px;
+        height: 70px;
+        border-radius: 10px;
+        color: var(--light);
+      }
+      
+      button:hover {
+        width: 650px;
+        height: 70px;
+        border-radius: 10px;
+        background-color: var(--light);
+        color: var(--medium);
+      }
+      
+      button:hover #svgcolor {
+        fill: var(--medium) !important;
+      }
+
+    .avatar {
+      display: none;
+    }
+    .avatar-text {
+      right: 50%;
+      transform: translateX(50%);
+      text-align: center;
+      top: 140px;
+      font-size: 24px;
+      line-height: 30px;
+    }
+    .alink {
+      font-size: 40px;
+    }
+    .aboutme {
+      top: 330px;
+      left: 80px;
+      height: 270px;
+      width: 78%;
+    }
+    .aboutme-name {
+      font-size: 24px;
+      left: 20px;
+      top: 20px;
+    }
+    .aboutme-desc {
+      font-size: 16px;
+      left: 20px;
+      top: 70px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    button {
+        position: relative;
+        background-color: var(--medium);
+        margin: 10px;
+        top: 320px;
+        left: 50px;
+        border: 0px;
+        width: 610px;
+        height: 70px;
+        border-radius: 10px;
+        color: var(--light);
+      }
+      
+      button:hover {
+        width: 610px;
+        height: 70px;
+        border-radius: 10px;
+        background-color: var(--light);
+        color: var(--medium);
+      }
+      
+      button:hover #svgcolor {
+        fill: var(--medium) !important;
+      }
+
+    .avatar {
+      display: none;
+    }
+    .avatar-text {
+      right: 50%;
+      transform: translateX(50%);
+      text-align: center;
+      top: 140px;
+      font-size: 24px;
+      line-height: 30px;
+    }
+    .alink {
+      font-size: 40px;
+    }
+    .aboutme {
+      top: 330px;
+      left: 80px;
+      height: 270px;
+      width: 78%;
+    }
+    .aboutme-name {
+      font-size: 24px;
+      left: 20px;
+      top: 20px;
+    }
+    .aboutme-desc {
+      font-size: 16px;
+      left: 20px;
+      top: 70px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    button {
+        position: relative;
+        background-color: var(--medium);
+        margin: 10px;
+        top: 330px;
+        left: 0px;
+        border: 0px;
+        width: 95%;
+        height: 70px;
+        border-radius: 10px;
+        color: var(--light);
+      }
+      
+      button:hover {
+        width: 95%;
+        height: 70px;
+        border-radius: 10px;
+        background-color: var(--light);
+        color: var(--medium);
+      }
+      
+      button:hover #svgcolor {
+        fill: var(--medium) !important;
+      }
+
+    body {
+      font-size: 16px;
+    }
+    .alink {
+      font-size: 32px;
+    }
+    .aboutme {
+      top: 330px;
+      left: 30px;
+      height: 270px;
+      width: 78%;
+    }
+    .aboutme-name {
+      font-size: 20px;
+      left: 15px;
+      top: 20px;
+    }
+    .aboutme-desc {
+      font-size: 14px;
+      left: 5px;
+      top: 50px;
+    }
+  }
+  
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--medium);
+    color: var(--light);
+    text-align: center;
+  }
+  
