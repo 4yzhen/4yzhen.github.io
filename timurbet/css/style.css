@@ -1,0 +1,183 @@
+body, html {
+    background-image: url(img/bg.png);
+    background-repeat:no-repeat;
+    background-size: contain;
+    font-family: 'Gotham Rounded Book';
+    background-color: #151515 !important;
+}
+
+header {
+    position: relative;
+    top: 25px;
+    height: 100px;
+    border-bottom: none !important;
+    background-color: #00000000 !important;
+    
+}
+
+.container {
+    background-color: #00000000 !important;
+    height: 2000px;
+}
+
+.btn-outline-primary {
+    border: solid 0px #00000000 !important;
+    color: #eeeeee !important;
+    font-weight:700 !important;
+    background-color: #008758 !important;
+    border-radius: 60px !important;
+    width: 120px;
+    height: 50px;
+    font-size: 14px !important;
+}
+
+.btn {
+    margin-left: 2px !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: #017a50 !important;
+    color: #c0c0c0 !important;
+}
+
+.nav-link {
+    font-size: 18px !important;
+    color: #eeeeee !important;
+    font-weight: 400 !important;
+}
+
+.nav-link:hover {
+    color: #009b65 !important;
+}
+
+.active {
+    color: #00b676 !important;
+}
+
+#carouselExampleFade{
+    height: auto !important;
+}
+
+.carousel-inner {
+    height: 600px !important;
+}
+
+.floating {
+    height: 800px !important;
+    transition:1s;
+}
+
+.h-hr {
+    border-radius: 5px;
+    width: 15%;
+    background-color: #585858;
+    height: 3px;
+    margin: auto;
+    position: relative;
+    top: 13px;
+}
+
+.parter {
+    
+    height: 140px;
+    padding: 10px;
+    margin: auto;
+    padding: auto;
+}
+
+
+#carouselLogos {
+    border: solid #202020 1px;
+    border-radius: 24px;
+    background-color: #181818;
+    position: relative;
+    top: 60px;
+    margin: auto;
+    width: 85%;
+    height: 150px !important;
+}
+
+.inner-cont {
+    background-color: #161616;
+    border-radius: 24px;
+    height: 600px;
+}
+
+.float-text {
+    text-align: left;
+    font-weight: 700;
+    font-size: 72px;
+    color: #eeeeee;
+    position: relative;
+    top: 250px;
+    animation: 3s ease-in giris-1;
+}
+
+.float-text-l {
+    text-align: right;
+    font-weight: 700;
+    font-size: 72px;
+    color: #eeeeee;
+    position: relative  ;
+    top: 250px;
+    animation: 3s ease-in giris-1;
+}
+
+.vurgu-l {
+    position: relative;
+    top: 0px;
+    text-align: right !important;
+    color: rgb(255, 230, 0);
+    font-weight: 500;
+    animation: 3s ease giris-3;
+}
+
+.vurgu {
+    position: absolute;
+    text-align: left;
+    top: 100px;
+    color: rgb(255, 230, 0);
+    font-weight: 500;
+    animation: 3s ease giris-2;
+}
+
+@keyframes giris-1 {
+    0%{
+        top: 220px;
+        opacity: 0;
+    }
+    50%{
+        top: 250px;
+        opacity: 1;
+    }
+}
+
+@keyframes giris-2 {
+    0%{
+        top: 0px;
+        opacity: 0;
+    }
+    50%{
+        top: 0px;
+        opacity: 0;
+    }
+    100%{
+        top: 100px;
+        opacity: 1;
+    }
+}
+
+@keyframes giris-3 {
+    0%{
+        top: -100px;
+        opacity: 0;
+    }
+    50%{
+        top: -100px;
+        opacity: 0;
+    }
+    100%{
+        top: 0px;
+        opacity: 1;
+    }
+}
