@@ -1,0 +1,167 @@
+body, html {
+    background-image: url('../css/img/bg.png') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.container {
+    height: auto !important;
+}
+  
+  .coin-flip {
+    z-index: 1;
+    position: absolute;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    left: 0;
+    right: 0;
+    transform-style: preserve-3d;
+    animation: - 1.5s ease-in-out 0s infinite alternate;
+  }
+
+  .div-balance{
+
+  }
+  .all {
+
+    margin-top: 240px !important;
+  }  
+  #controls {
+    box-shadow: 0px 0px 30px 0px rgb(29, 29, 29);
+    border: 3px solid rgb(23, 92, 58);
+    margin-top: 70px;
+    border-radius: 20px;
+    padding-top: 60px;
+    background-color: rgb(19, 19, 19) !important;
+    height: 500px;
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    top: 150px;
+    width: 20%;
+    left: 0;
+    right: 0;
+    transition: 1s;
+  }
+  
+  #bahis {
+    width: 100px;
+    position: relative;
+    margin-top: 150px;
+    font-weight: 500;
+    color: #eeeeee;
+    height: 50px;
+    border-radius: 15px;
+    background-color: #181818;
+    outline: none;
+    border: solid 1px #414141;
+    transition: 0.5s;
+    text-align: center;
+  }
+
+  input {
+
+    outline: none;
+    border: none;
+    padding: 5px;
+  }
+
+  #bahis:focus {
+    border: solid 2px #009751;
+    box-shadow: 0px 0px 20px 0px rgb(4, 139, 72);
+  }
+
+  input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+  #div-debuginfo{
+    top: 170px;
+    position: absolute;
+    margin: auto;
+    width: 250px;
+    left: 0;
+    right: 0;
+  }
+  
+  #div-balance {
+    display: inline-block;
+  }
+  
+  .coin-flip img {
+    width: 100px;
+  }
+  
+  .coin-heads, .coin-tails {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .coin-heads{
+    animation: flip-head .1s linear 0s infinite alternate;
+  }
+  .coin-tails{
+    animation: flip-tail .1s linear 0s infinite alternate;
+  }
+
+  .secim {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    
+  }
+  #buttons {
+    margin-top: 30px;
+  }
+
+  #btn-heads {
+    background-image: url('../css/img/yazi.png') !important;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: transparent;
+  }
+
+  #btn-tails {
+    background-image: url('../css/img/tura.png') !important;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: transparent;
+  }
+
+  #div-result {
+    color: #eeeeee;
+    font-size: 22px;
+    font-weight: 600;
+    transition: 1s;
+  }
+
+  .bakiye {
+    font-size: 18px;
+    color: #eeeeee;
+  }
+  
+  @keyframes fly {
+    0% { top: 100%; }
+    100% { top: 0%; }
+  }
+  
+  @keyframes flip-head {
+    0%, 100% { transform: rotateX(0deg); transform: rotateY(0deg);}
+    50% { transform: rotateX(180deg); transform: (180deg); }
+  }
+  
+  @keyframes flip-tail {
+    0%, 100% { transform: rotateX(180deg); transform: rotateY(180deg);}
+    50% { transform: rotateX(0deg); transform: rotateY(0deg); }
+  }
